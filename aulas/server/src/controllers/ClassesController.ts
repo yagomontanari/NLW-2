@@ -28,6 +28,7 @@ export default class ClassesController {
         const timeInMinutes = convertHourToMinutes(time);
 
         console.log(timeInMinutes);
+        console.log();
 
         const classes = await db('classes')
             .whereExists(function () {  //Query para a tabela Schedule para verificar se há o horário disponível para a aula.
