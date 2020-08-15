@@ -14,7 +14,7 @@ import './styles.css'
 
 function TeacherForm() {
   const history = useHistory();
-  
+
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState(''); //Cria um estado para os inputs
   const [whatsapp, setWhatsapp] = useState('');
@@ -82,25 +82,25 @@ function TeacherForm() {
               name="name"
               label="Nome Completo"
               value={name}
-              onChange={(e) => { setName(e.target.value)}} />
+              onChange={(e) => { setName(e.target.value) }} />
 
             <Input
               name="avatar"
               label="Avatar"
               value={avatar}
-              onChange={(e) => { setAvatar(e.target.value)}} />
+              onChange={(e) => { setAvatar(e.target.value) }} />
 
             <Input
               name="whatsapp"
               label="Whatsapp"
               value={whatsapp}
-              onChange={(e) => { setWhatsapp(e.target.value)}} />
+              onChange={(e) => { setWhatsapp(e.target.value) }} />
 
             <Textarea
               name="bio"
               label="Biografia"
               value={bio}
-              onChange={(e) => { setBio(e.target.value)}} />
+              onChange={(e) => { setBio(e.target.value) }} />
 
           </fieldset>
 
@@ -111,7 +111,7 @@ function TeacherForm() {
               name="subject"
               label="Matéria"
               value={subject}
-              onChange={(e) => { setSubject(e.target.value)}}
+              onChange={(e) => { setSubject(e.target.value) }}
               options={[
                 { value: 'Artes', label: 'Artes' },
                 { value: 'Biologia', label: 'Biologia' },
